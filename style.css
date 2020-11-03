@@ -1,3 +1,29 @@
-.sky {
-    background-color: aquamarine;
+header {
+    background-color: #99c1de;
+    margin: 0.5rem;
+    display: flex;
+}
+
+body {
+    background-color: #fde2e4;
+    position: inherit;
+}
+
+h1 {
+    background-color: #fad2e1;
+    text-align: center;
+}
+
+footer {
+    background-color: #99c1de;
+    margin: 0.5rem;
+    display: flex;
+}
+
+.links {
+    text-decoration: none;
+    position: relative;
+    margin: 5%;
+    padding: 1%;
+    text-align: center;
 }
