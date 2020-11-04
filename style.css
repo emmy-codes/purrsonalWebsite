@@ -1,23 +1,30 @@
 .background {
     background-image: url(windows95.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     background-color: #394dcd;
     position: relative;
     margin: 0;
     height: 100vh;
+    z-index: -1;
+
 }
 
 .start-button {
-    background-color: #c0c0c0;
-    display: flex;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
+    display: block;
+    padding: 3px 5px 3px 33px;
     border-color: #808080;
-    border: 2px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
+}
+
+.win-icon {
+    background: url(win95icon.png) no-repeat;
+    position: absolute;
+    background-size: 24px;
+    background-position: 5px center;
 }
 
 .taskbar {
@@ -28,16 +35,20 @@
     position: absolute;
     bottom: 0;
     z-index: -1;
+    padding: 3px 0px 3px 3px;
+    box-shadow: 0px -2px 2px white;
 }
 
 .recycle-bin {
-    background-image: url(recycle-bin.png);
-    background-repeat: no-repeat;
+    background: url(recycle-bin.png) no-repeat;
     width: 7vh;
     height: 6vh;
     position: absolute;
     display: flex;
-    bottom: 5rem;
-    right: 1.5rem;
+    bottom: 4rem;
+    right: 1rem;
+    font-family: sans-serif;
+    font-size: 1.5vh;
+    text-align: center;
 }
 
