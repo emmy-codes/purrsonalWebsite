@@ -1,29 +1,43 @@
-header {
-    background-color: #99c1de;
-    margin: 0.5rem;
-    display: flex;
-}
-
-body {
-    background-color: #fde2e4;
-    position: inherit;
-}
-
-h1 {
-    background-color: #fad2e1;
-    text-align: center;
-}
-
-footer {
-    background-color: #99c1de;
-    margin: 0.5rem;
-    display: flex;
-}
-
-.links {
-    text-decoration: none;
+.background {
+    background-image: url(windows95.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #394dcd;
     position: relative;
-    margin: 5%;
-    padding: 1%;
-    text-align: center;
+    margin: 0;
+    height: 100vh;
 }
+
+.start-button {
+    background-color: #c0c0c0;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    border-color: #808080;
+    border: 2px;
+}
+
+.taskbar {
+    background-color: #c0c0c0;
+    display: flex;
+    width: 100vw;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.recycle-bin {
+    background-image: url(recycle-bin.png);
+    background-repeat: no-repeat;
+    width: 7vh;
+    height: 6vh;
+    position: absolute;
+    display: flex;
+    bottom: 5rem;
+    right: 1.5rem;
+}
+
