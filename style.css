@@ -46,7 +46,8 @@
     display: block;
     bottom: 2.5rem;
     right: 0.5rem;
-    background-size: 26px;
+    background-position: top center;
+    background-size: 25px;
 }
 
 .icon-text {
@@ -58,7 +59,6 @@
 .all-icons {
     padding: 10px;
     padding-top: 30px;
-    background-position: top center;
     position: absolute;
     display: block;
 }
@@ -68,4 +68,23 @@
     background-position: top center;
     top: 1rem;
     left: 0.1rem;
+    background-size: 25px;
 }
+
+.my-computer-icon {
+    background: url(my-computer.png) no-repeat;
+    top: 1rem;
+    left: 15rem;
+    background-position: top center;
+    background-size: 25px;
+}
+
+.the-internet-icon {
+    background: url(the-internet.png) no-repeat;
+    top: 1rem;
+    left: 5.5rem;
+    background-position: top center;
+    background-size: 50px;
+}
+
+/* fix the internet icon which has massive background space */
