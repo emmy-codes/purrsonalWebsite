@@ -7,7 +7,6 @@
     margin: 0;
     height: 100vh;
     z-index: -1;
-
 }
 
 .start-button {
@@ -19,6 +18,7 @@
     font-weight: bold;
     margin: 0 0 0 0.4vh;
     box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
+    display: none;
 }
 
 .win-icon {
@@ -48,6 +48,7 @@
     right: 0.5rem;
     background-position: top center;
     background-size: 25px;
+    padding-top: 30px;
 }
 
 .icon-text {
@@ -66,25 +67,70 @@
 .folder-icon {
     background: url(folderIcon.png) no-repeat;
     background-position: top center;
-    top: 1rem;
-    left: 0.1rem;
-    background-size: 25px;
+    top: 3rem;
+    left: 1rem;
+    background-size: 30px;
 }
 
 .my-computer-icon {
     background: url(my-computer.png) no-repeat;
-    top: 1rem;
-    left: 15rem;
+    top: 4rem;
+    left: 12rem;
     background-position: top center;
-    background-size: 25px;
+    background-size: 30px;
+    padding-top: 33px;
 }
 
 .the-internet-icon {
-    background: url(the-internet.png) no-repeat;
+    background: url(the-internet1.png) no-repeat;
     top: 1rem;
     left: 5.5rem;
     background-position: top center;
-    background-size: 50px;
+    background-size: 30px;
+    padding-top: 26px;
 }
 
-/* fix the internet icon which has massive background space */
+.cd-image {
+    background: url(cd-image.png) no-repeat;
+    top: 1rem;
+    right: 1rem;
+    background-position: top center;
+    background-size: 30px;
+    padding-top: 32px;
+}
+
+.start-menu {
+    background-color: #c0c0c0;
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 35vh;
+    width: 35vw;
+    bottom: calc(1.7rem + 3px + 1px);
+    box-shadow: 2px 2px 4px 0px black;
+    margin-left: 0.6vh;
+    /* bottom: calc (height of taskbar + padding + box shadow*/
+}
+
+.clicked-start-button {
+    display: block;
+    padding: 4px 8px 4px 33px;
+    border-color: #808080;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 0 0 0.4vh;
+    box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
+}
+
+.dotted-line {
+    outline: 1px dotted black;
+    outline-offset: -4px;
+}
+
+.side-bar {
+    background: url(win95writing.png) no-repeat;
+    height: 100rem;
+    width: 10rem;
+}
