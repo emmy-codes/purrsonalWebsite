@@ -124,11 +124,16 @@
     font-weight: bold;
     margin: 0 0 0 0.4vh;
     box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
+    
 }
 
 .dotted-line {
     outline: 1px dotted black;
     outline-offset: -4px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* .side-bar { 
