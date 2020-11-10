@@ -65,7 +65,7 @@
     display: block;
 }
 
-.folder-icon {
+.documents-icon {
     background: url(folderIcon.png) no-repeat;
     background-position: top center;
     top: 3%;
@@ -157,10 +157,11 @@
     transform: rotate(-90deg);
     position: absolute;
     bottom: -5%;
-    width: -webkit-fill-available;
+    width: inherit;
     font-size: x-large;
-    display: flex;
+    display: inline-flex;
     width: 100%;
+    right: 0.2vw;
 }
 
 .nr95 {
@@ -185,10 +186,65 @@
 }
 
 .opened-folder {
-    background-color: white;
-    width: 70%;
-    height: 30%;
-    left: 10%;
-    top: 20%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 10%;
+    max-width: 15em;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #393939;
+    border-bottom: 2px solid #393939;
+    background: #C0C0C0;
+    font-family: sans-serif;
+}
+
+.folder-header {
+    background: #000181;
+    color: white;
+    position: relative;
+    font-size: .65rem;
+    padding: 4px;
+    border: 2px solid #BDBDBD;
+    text-align: center;
+}
+
+.folder-body {
+    position: relative;
+    padding: 10px 7px;
+    border: 2px solid #BDBDBD;
+    flex: 1 1 auto;
+    background: white;
+    min-height: 7em;
+}
+
+.project-icons {
+    background: url(folderIcon.png) no-repeat;
+    background-position: top center;
+    top: 3%;
+    left: 1%;
+    background-size: 30px;
+    cursor: pointer;
+    position: inherit;
+    display: -webkit-inline-box;
+}
+
+@media only screen 
+  and (min-device-width: 800px)  {
+
+    .start-menu {
+        width: 16vw;
+    }
+    .side-bar-text {
+    bottom: -2%;
+    }
+    .opened-folder {
+        max-width: 20em;
+        height: 15em;
+    }
+    .all-icons {
+        padding-top: 47px;
+        background-size: 45px;
+    }
 }
