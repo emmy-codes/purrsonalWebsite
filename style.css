@@ -156,20 +156,18 @@
     color: #D3D3D3;
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 5%;
+    bottom: -5%;
     width: -webkit-fill-available;
     font-size: x-large;
+    display: flex;
+    width: 100%;
 }
 
 .nr95 {
     font-family: sans-serif;
     color: white;
     font-weight: lighter;
-    transform: rotate(-90deg);
-    position: absolute;
-    bottom: 60%;
-    width: -webkit-fill-available;
-    font-size: x-large;
+    margin-left: 0.5em;
 }
 
 .clippy {
