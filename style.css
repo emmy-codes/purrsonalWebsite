@@ -1,12 +1,14 @@
 .background {
-    /* background-image: url(windows95.jpg);*/
+    /* background-image: url(windows95.jpg);
     background-position: center;
-    background-size: cover;
-    background-color: #008080;
     position: relative;
     margin: 0;
     height: 100vh;
     z-index: -1;
+    background-size: cover;*/
+    background-color: #008080;
+    display: initial;
+    margin: 0;
 }
 
 .start-button {
@@ -68,8 +70,8 @@
 .documents-icon {
     background: url(folderIcon.png) no-repeat;
     background-position: top center;
-    top: 3%;
-    left: 1%;
+    top: 5%;
+    left: 25%;
     background-size: 30px;
     cursor: pointer;
 }
@@ -122,6 +124,7 @@
     padding: 5px 0px 0px 5px;
     box-shadow: inset 3px 3px 2px white, 3px 3px 2px black;
     margin-left: 0.6vh;
+    display: inline-flex;
     /* bottom: calc (height of taskbar + padding + box shadow*/
 }
 
@@ -147,7 +150,8 @@
     height: 99%;
     width: 20%;
     position: relative;
-    display: block;
+    display: inline-flex;
+    position: relative;
 }
 
 .side-bar-text {
@@ -179,17 +183,18 @@
         cursor: pointer;
         top: 40%;
         left: 60%;
-        position: relative;
+        position: absolute;
         display: block;
         height: 3.2rem;
         width: 5.8rem;
 }
 
 .opened-folder {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     left: 10%;
+    top: 30%;
     max-width: 15em;
     border: 1px solid rgba(0,0,0,.125);
     border-top: 2px solid white;
@@ -247,4 +252,18 @@
         padding-top: 47px;
         background-size: 45px;
     }
+}
+
+.folder-img {
+    display: inline-flex;
+    position: relative;
+    object-fit: none;
+}
+
+.projects-imgs {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    max-width: 50vw;
+    max-height: 50vh;
 }

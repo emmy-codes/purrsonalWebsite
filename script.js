@@ -11,3 +11,6 @@ function openMenu() {
     };
 }
 openStartMenu.addEventListener("click", openMenu);
+
+
+let projectOne = document.querySelector("");
