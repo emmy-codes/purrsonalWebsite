@@ -12,5 +12,36 @@ function openMenu() {
 }
 openStartMenu.addEventListener("click", openMenu);
 
+let projectFolder = document.querySelector(".folder-body");
 
-let projectOne = document.querySelector("");
+projectFolder.addEventListener('dblclick', function revealFolder(event) {
+    const targetedDivIDs = {
+        project1: '#project-one',
+        project2: '#project-two',
+        project3: '#project-three',
+    };
+
+    const targetedDivID = targetedDivIDs[event.target.id]; //targetedDivIDs.project1 or targetedDivIDs['project1']
+
+    const targetedDiv = document.querySelector(targetedDivID);
+
+    targetedDiv.classList.remove('hidden');
+
+    event.stopPropagation();
+    event.preventDefault();
+});
+
+document.querySelectorAll('.close-button').forEach(function addHideThingyEventListener(closeButton) {
+    closeButton.addEventListener('click', function hideThingy () {
+        closeButton.parentNode.classList.add('hidden');
+    })
+});
+
+let openDocuments = document.querySelector("#documents")
+let showFolder = document.querySelector("#opened-folder")
+
+function viewDocuments (event) {
+    showFolder.classList.remove('hidden');
+}
+
+openDocuments.addEventListener("click", viewDocuments);

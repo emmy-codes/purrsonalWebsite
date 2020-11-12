@@ -141,7 +141,7 @@
     outline-offset: -4px;
 }
 
-.hidden {
+body .hidden {
     display: none;
 }
 
@@ -230,28 +230,10 @@
     top: 3%;
     left: 1%;
     background-size: 30px;
-    cursor: pointer;
+    color: #393939;
+    text-decoration: none;
     position: inherit;
     display: -webkit-inline-box;
-}
-
-@media only screen 
-  and (min-device-width: 800px)  {
-
-    .start-menu {
-        width: 16vw;
-    }
-    .side-bar-text {
-    bottom: -2%;
-    }
-    .opened-folder {
-        max-width: 20em;
-        height: 15em;
-    }
-    .all-icons {
-        padding-top: 47px;
-        background-size: 45px;
-    }
 }
 
 .folder-img {
@@ -267,3 +249,85 @@
     max-width: 50vw;
     max-height: 50vh;
 }
+
+.close-button {
+    color: white;
+    display: block;
+    font-family: Verdana;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.menu-item {
+    display: flex;
+    width: calc(98% - 0.3em);
+    align-items: center;
+    padding: 0.3em;
+}
+
+.menu-items {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.menu-item span {
+    margin-left: 0.4em;
+    line-height: 1;
+    margin-top: 0.4em;
+}
+
+.menu-item:hover {
+    background: #1718ba;
+    color: white;
+}
+
+.menu-item::after {
+    display: block;
+    content: "\203A";
+    font-weight: 800;
+    vertical-align: middle;
+    position: absolute;
+    right: 0.4em;
+    font-size: 1.4em;
+}
+
+@media only screen 
+  and (min-device-width: 800px)  {
+
+    .start-menu {
+        max-width: 16vw;
+    }
+    .side-bar-text {
+    bottom: -2%;
+    }
+    .opened-folder {
+        max-width: 20em;
+        height: 15em;
+    }
+    .all-icons {
+        padding-top: 47px;
+        background-size: 45px;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 650px)  {
+
+    .menu-item {
+        font-size: 12px;
+    }
+
+    .folder-img {
+    object-fit: fill;
+    max-width: 20%;
+    }
+  }
+
+  .clippy-text {
+      font-family: sans-serif;
+      font-size: small;
+  }

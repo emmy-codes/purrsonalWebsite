@@ -18,26 +18,36 @@
         <div class="side-bar">
             <p class="side-bar-text">Windows <span class="nr95">95</span></p>
         </div>
-        <img src="folderIcon.png" class="folder-img">
+        <div class="menu-items">
+            <div class="menu-item" id="documents"><img src="folderIcon.png" class="folder-img"><span>Documents</span></div>
+            <div class="menu-item"><img src="folderIcon.png" class="folder-img"><span>Text here</span></div>
+            <div class="menu-item"><img src="folderIcon.png" class="folder-img"><span>Text here</span></div>
+        </div>
        <!-- <div class="all-icons documents-icon icon-text" type="button"></div>-->
     </div>
 
-    <div class="clippy"></div>
-    <div class="opened-folder">
+    <div class="clippy">
+        <p class="clippy-text">
+            Hello! It looks like you're visiting Emma's portfolio for the first time. Try clicking on any of the icons and see what happens!
+        </p>
+    </div>
+
+    <div class="opened-folder hidden" id="opened-folder">
     <div class="folder-header">
         <span>Documents</span>
         </div>
         <div class="folder-body">
-            <div class="all-icons project-icons icon-text" type="button">Project 1</div>
-            <div class="all-icons project-icons icon-text" type="button">Project 2</div>
-            <div class="all-icons project-icons icon-text" type="button">Project 3</div>
+            <a class="all-icons project-icons icon-text" id="project1" target="_blank">Project 1</a>
+            <a class="all-icons project-icons icon-text" id="project2" target="_blank">Project 2</a>
+            <a class="all-icons project-icons icon-text" id="project3" target="_blank">Project 3</a>
         </div>
     </div>
+
 </body>
 
-<img src="projectOne.png" class="opened-folder folder-header projects-imgs">
-<img src="projectTwo.png" class="hidden">
-<img src="projectThree.png" class="hidden">
+<div class="hidden projects-imgs" id="project-one"><span class="close-button">X</span><img src="projectOne.png" class="opened-folder folder-header"></div>
+<div class="hidden projects-imgs" id="project-two"><span class="close-button">X</span><img src="projectTwo.png" class="opened-folder folder-header"></div>
+<div class="hidden projects-imgs" id="project-three"><span class="close-button">X</span><img src="projectThree.png" class="opened-folder folder-header"></div>
 <script src="script.js"></script>
 </html>
 
