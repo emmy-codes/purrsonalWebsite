@@ -1,333 +1,336 @@
 .background {
-    /* background-image: url(windows95.jpg);
+  /* background-image: url(windows95.jpg);
     background-position: center;
     position: relative;
     margin: 0;
     height: 100vh;
     z-index: -1;
-    background-size: cover;*/
-    background-color: #008080;
-    display: initial;
-    margin: 0;
+    background-size: cover; totally ruins everything, big overhaul needed*/
+  background-color: #008080;
+  display: initial;
+  margin: 0;
 }
 
 .start-button {
-    display: block;
-    padding: 3px 5px 3px 33px;
-    border-color: #808080;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 0 0 0 0.4vh;
-    box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
-    cursor: pointer;
+  display: block;
+  padding: 3px 5px 3px 33px;
+  border-color: #808080;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0 0 0 0.4vh;
+  box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
+  cursor: pointer;
 }
 
 .win-icon {
-    background: url(win95icon.png) no-repeat;
-    position: absolute;
-    background-size: 24px;
-    background-position: 5px center;
+  background: url(win95icon.png) no-repeat;
+  position: absolute;
+  background-size: 24px;
+  background-position: 5px center;
 }
 
 .taskbar {
-    background-color: #c0c0c0;
-    display: flex;
-    width: 100vw;
-    height: 1.7rem;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    padding: 3px 0px;
-    box-shadow: 0px -3px 2px white;
+  background-color: #c0c0c0;
+  display: flex;
+  width: 100vw;
+  height: 1.7rem;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  padding: 3px 0px;
+  box-shadow: 0px -3px 2px white;
 }
 
 .bin-icon {
-    background: url(recycle-bin.png) no-repeat;
-    position: absolute;
-    display: block;
-    bottom: 5.5%;
-    right: 2%;
-    background-position: top center;
-    background-size: 25px;
-    padding-top: 30px;
-    cursor: pointer;
+  background: url(recycle-bin.png) no-repeat;
+  position: absolute;
+  display: block;
+  bottom: 5.5%;
+  right: 2%;
+  background-position: top center;
+  background-size: 25px;
+  padding-top: 30px;
+  cursor: pointer;
 }
 
 .icon-text {
-    font-family: sans-serif;
-    font-size: 1.5vh;
-    text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5vh;
+  text-align: center;
 }
 
 .all-icons {
-    padding: 10px;
-    padding-top: 30px;
-    position: absolute;
-    display: block;
+  padding: 10px;
+  padding-top: 30px;
+  position: absolute;
+  display: block;
 }
 
 .documents-icon {
-    background: url(folderIcon.png) no-repeat;
-    background-position: top center;
-    top: 5%;
-    left: 25%;
-    background-size: 30px;
-    cursor: pointer;
+  background: url(folderIcon.png) no-repeat;
+  background-position: top center;
+  top: 5%;
+  left: 25%;
+  background-size: 30px;
+  cursor: pointer;
 }
 
 .the-internet-icon {
-    background: url(the-internet1.png) no-repeat;
-    top: 4%;
-    left: 20%;
-    background-position: top center;
-    background-size: 30px;
-    padding-top: 26px;
-    cursor: pointer;
+  background: url(the-internet1.png) no-repeat;
+  top: 4%;
+  left: 20%;
+  background-position: top center;
+  background-size: 30px;
+  padding-top: 26px;
+  cursor: pointer;
 }
 
 .my-computer-icon {
-    background: url(my-computer.png) no-repeat;
-    top: 14%;
-    left: 42%;
-    background-position: top center;
-    background-size: 30px;
-    padding-top: 33px;
-    cursor: pointer;
+  background: url(my-computer.png) no-repeat;
+  top: 14%;
+  left: 42%;
+  background-position: top center;
+  background-size: 30px;
+  padding-top: 33px;
+  cursor: pointer;
 }
 
 .cd-image {
-    background: url(cd-image.png) no-repeat;
-    top: 6%;
-    right: 15%;
-    background-position: top center;
-    background-size: 30px;
-    padding-top: 32px;
-    cursor: pointer;
+  background: url(cd-image.png) no-repeat;
+  top: 6%;
+  right: 15%;
+  background-position: top center;
+  background-size: 30px;
+  padding-top: 32px;
+  cursor: pointer;
 }
 
 .link-details {
-    text-decoration: none;
-    color:black;
+  text-decoration: none;
+  color: black;
 }
 
 .start-menu {
-    background-color: #c0c0c0;
-    position: absolute;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    height: 35vh;
-    width: 35vw;
-    bottom: calc(1.7rem + 3px + 1px);
-    box-shadow: 2px 2px 4px 0px black;
-    padding: 5px 0px 0px 5px;
-    box-shadow: inset 3px 3px 2px white, 3px 3px 2px black;
-    margin-left: 0.6vh;
-    display: inline-flex;
-    /* bottom: calc (height of taskbar + padding + box shadow*/
+  background-color: #c0c0c0;
+  position: absolute;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 35vh;
+  max-width: 35vw;
+  bottom: calc(1.7rem + 3px + 1px);
+  box-shadow: 2px 2px 4px 0px black;
+  padding: 5px 0px 0px 5px;
+  box-shadow: inset 3px 3px 2px white, 3px 3px 2px black;
+  margin-left: 0.6vh;
+  display: inline-flex;
+  /* bottom: calc (height of taskbar + padding + box shadow*/
 }
 
 .clicked-start-button {
-    display: block;
-    padding: 4px 8px 4px 33px;
-    border-color: #808080;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 0 0 0 0.4vh;
-    box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
-    outline: 1px dotted black;
-    outline-offset: -4px;
+  display: block;
+  padding: 4px 8px 4px 33px;
+  border-color: #808080;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0 0 0 0.4vh;
+  box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
+  outline: 1px dotted black;
+  outline-offset: -4px;
 }
 
 body .hidden {
-    display: none;
+  display: none;
 }
 
-.side-bar { 
-    background-color: #909090;
-    height: 99%;
-    width: 20%;
-    position: relative;
-    display: inline-flex;
-    position: relative;
+.side-bar {
+  background-color: #909090;
+  height: 99%;
+  width: 2rem;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .side-bar-text {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #D3D3D3;
-    transform: rotate(-90deg);
-    position: absolute;
-    bottom: -5%;
-    width: inherit;
-    font-size: x-large;
-    display: inline-flex;
-    width: 100%;
-    right: 0.2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #d3d3d3;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: -5px;
+  width: inherit;
+  font-size: 1.5rem;
+  display: inline-flex;
+  right: 0.1rem;
 }
 
 .nr95 {
-    font-family: sans-serif;
-    color: white;
-    font-weight: lighter;
-    margin-left: 0.5em;
+  font-family: sans-serif;
+  color: white;
+  font-weight: lighter;
+  margin-left: 0.5em;
 }
 
 .clippy {
-        background: url("clippy-headscratch.gif") no-repeat;
-        background-position: top center;
-        background-size: 90px;
-        padding-top: 33px;
-        cursor: pointer;
-        top: 40%;
-        left: 60%;
-        position: absolute;
-        display: block;
-        height: 3.2rem;
-        width: 5.8rem;
+  background: url("clippy-headscratch.gif") no-repeat;
+  background-position: top center;
+  background-size: 90px;
+  padding-top: 33px;
+  cursor: pointer;
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  display: block;
+  height: 3.2rem;
+  width: 6.8rem;
+  font-family: sans-serif;
+  font-size: small;
 }
 
 .opened-folder {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 10%;
-    top: 30%;
-    max-width: 15em;
-    border: 1px solid rgba(0,0,0,.125);
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-right: 2px solid #393939;
-    border-bottom: 2px solid #393939;
-    background: #C0C0C0;
-    font-family: sans-serif;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  top: 30%;
+  max-width: 15em;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #393939;
+  border-bottom: 2px solid #393939;
+  background: #c0c0c0;
+  font-family: sans-serif;
 }
 
 .folder-header {
-    background: #000181;
-    color: white;
-    position: relative;
-    font-size: .65rem;
-    padding: 4px;
-    border: 2px solid #BDBDBD;
-    text-align: center;
+  background: #000181;
+  color: white;
+  position: relative;
+  font-size: 0.65rem;
+  padding: 4px;
+  border: 2px solid #bdbdbd;
+  text-align: center;
 }
 
 .folder-body {
-    position: relative;
-    padding: 10px 7px;
-    border: 2px solid #BDBDBD;
-    flex: 1 1 auto;
-    background: white;
-    min-height: 7em;
+  position: relative;
+  padding: 10px 7px;
+  border: 2px solid #bdbdbd;
+  flex: 1 1 auto;
+  background: white;
+  min-height: 7em;
 }
 
 .project-icons {
-    background: url(folderIcon.png) no-repeat;
-    background-position: top center;
-    top: 3%;
-    left: 1%;
-    background-size: 30px;
-    color: #393939;
-    text-decoration: none;
-    position: inherit;
-    display: -webkit-inline-box;
+  background: url(folderIcon.png) no-repeat;
+  background-position: top center;
+  top: 3%;
+  left: 1%;
+  background-size: 30px;
+  color: #393939;
+  text-decoration: none;
+  position: inherit;
+  display: -webkit-inline-box;
 }
 
 .folder-img {
-    display: inline-flex;
-    position: relative;
-    object-fit: none;
+  display: inline-flex;
+  position: relative;
+  object-fit: none;
 }
 
 .projects-imgs {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    max-width: 50vw;
-    max-height: 50vh;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  max-width: 50vw;
+  max-height: 50vh;
 }
 
 .close-button {
-    color: white;
-    display: block;
-    font-family: Verdana;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
+  color: white;
+  display: block;
+  font-family: Verdana;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .menu-item {
-    display: flex;
-    width: calc(98% - 0.3em);
-    align-items: center;
-    padding: 0.3em;
+  display: flex;
+  width: calc(98% - 0.3em);
+  align-items: center;
+  padding: 0.3em;
+  cursor: pointer;
 }
 
 .menu-items {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 1.3vw;
 }
 
 .menu-item span {
-    margin-left: 0.4em;
-    line-height: 1;
-    margin-top: 0.4em;
+  margin-left: 0.4em;
+  line-height: 1;
+  margin-top: 0.4em;
 }
 
 .menu-item:hover {
-    background: #1718ba;
-    color: white;
+  background: #1718ba;
+  color: white;
 }
 
 .menu-item::after {
-    display: block;
-    content: "\203A";
-    font-weight: 800;
-    vertical-align: middle;
-    position: absolute;
-    right: 0.4em;
-    font-size: 1.4em;
+  display: block;
+  content: "\203A";
+  font-weight: 800;
+  position: absolute;
+  right: 0.4em;
+  font-size: 1.4em;
 }
 
-@media only screen 
-  and (min-device-width: 800px)  {
+@media only screen and (min-width: 800px) {
+  .start-menu {
+    width: 16vw;
+  }
 
-    .start-menu {
-        max-width: 16vw;
-    }
-    .side-bar-text {
-    bottom: -2%;
-    }
-    .opened-folder {
-        max-width: 20em;
-        height: 15em;
-    }
-    .all-icons {
-        padding-top: 47px;
-        background-size: 45px;
-    }
+  .opened-folder {
+    max-width: 20em;
+    height: 15em;
+  }
+
+  .all-icons {
+    padding-top: 50px;
+    background-size: 45px;
+  }
+
+  .clippy {
+    background-size: 90px;
+    padding-top: 95px;
+  }
 }
 
-@media only screen 
-  and (max-device-width: 650px)  {
+@media only screen and (max-width: 650px) {
+  .menu-item {
+    font-size: 12px;
+  }
 
-    .menu-item {
-        font-size: 12px;
-    }
-
-    .folder-img {
+  .folder-img {
     object-fit: fill;
-    max-width: 20%;
-    }
+    max-width: 15%;
   }
+}
 
-  .clippy-text {
-      font-family: sans-serif;
-      font-size: small;
+@media only screen and (min-width: 1024px) {
+  .menu-item {
+    font-size: 20px;
   }
+}
