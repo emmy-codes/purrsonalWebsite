@@ -16,7 +16,7 @@
   padding: 3px 5px 3px 33px;
   border-color: #808080;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
   font-weight: bold;
   margin: 0 0 0 0.4vh;
   box-shadow: 2px 2px 2px black, inset 2px 2px 3px white;
@@ -55,7 +55,7 @@
 }
 
 .icon-text {
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
   font-size: 1.5vh;
   text-align: center;
   color: white;
@@ -115,7 +115,7 @@
   background-color: #c0c0c0;
   position: absolute;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
   font-weight: bold;
   height: 35vh;
   max-width: 35vw;
@@ -133,7 +133,7 @@
   padding: 4px 8px 4px 33px;
   border-color: #808080;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
   font-weight: bold;
   margin: 0 0 0 0.4vh;
   box-shadow: inset -2px -2px 2px white, inset 2px 2px 3px black;
@@ -169,7 +169,7 @@ body .hidden {
 }
 
 .side-bar-text {
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
   font-weight: bold;
   color: #d3d3d3;
   transform: rotate(-90deg);
@@ -182,7 +182,7 @@ body .hidden {
 }
 
 .nr95 {
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
   color: white;
   font-weight: lighter;
   margin-left: 0.5em;
@@ -190,18 +190,10 @@ body .hidden {
 
 .clippy {
   background: url("clippy-headscratch.gif") no-repeat;
-  background-position: top center;
+  background-position: bottom center;
   background-size: 90px;
-  padding-top: 33px;
-  cursor: pointer;
-  top: 40%;
-  left: 60%;
-  position: absolute;
-  display: block;
-  height: 3.2rem;
-  width: 6.8rem;
-  font-family: sans-serif;
-  font-size: small;
+  width: 100%;
+  height: 90px;
 }
 
 .opened-folder {
@@ -217,7 +209,7 @@ body .hidden {
   border-right: 2px solid #393939;
   border-bottom: 2px solid #393939;
   background: #c0c0c0;
-  font-family: sans-serif;
+  font-family: "Microsoft Sans", sans-serif;
 }
 
 .folder-header {
@@ -288,7 +280,7 @@ body .hidden {
   display: flex;
   width: 100%;
   flex-direction: column;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
 }
 
 .menu-item span {
@@ -311,9 +303,24 @@ body .hidden {
   font-size: 1.4em;
 }
 
+@media only screen and (max-width: 650px) {
+  .menu-item {
+    font-size: 12px;
+  }
+
+  .clippy {
+    padding-top: 95px;
+  }
+
+  .folder-img {
+    object-fit: fill;
+    max-width: 15%;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .start-menu {
-    width: 16vw;
+    width: 18vw;
   }
 
   .opened-folder {
@@ -329,23 +336,37 @@ body .hidden {
 
   .clippy {
     background-size: 90px;
-    padding-top: 95px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .menu-item {
-    font-size: 12px;
-  }
-
-  .folder-img {
-    object-fit: fill;
-    max-width: 15%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .menu-item {
-    font-size: 20px;
+    font-size: 18px;
   }
+}
+
+
+.clippy-balloon {
+    background: #FFC;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.clippy-content {
+  max-width: 200px;
+  min-width: 120px;
+  font-family: "Microsoft Sans", sans-serif;
+  font-size: 10pt;
+  height: auto;
+  cursor: pointer;
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  display: block;
+  height: 3.2rem;
+  width: 6.8rem;
+  font-family: sans-serif;
+  font-size: small;
 }
