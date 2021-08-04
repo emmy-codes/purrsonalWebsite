@@ -58,6 +58,7 @@
   font-family: sans-serif;
   font-size: 1.5vh;
   text-align: center;
+  color: white;
 }
 
 .all-icons {
@@ -108,7 +109,6 @@
 
 .link-details {
   text-decoration: none;
-  color: black;
 }
 
 .start-menu {
@@ -324,6 +324,7 @@ body .hidden {
   .all-icons {
     padding-top: 50px;
     background-size: 45px;
+    font-size: 0.75rem;
   }
 
   .clippy {
