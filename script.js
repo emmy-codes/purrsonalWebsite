@@ -51,7 +51,7 @@ openDocuments.addEventListener("click", viewDocuments);
 function getTime() {
     const hours = new Date();
     let time = document.querySelector(".time");
-    time.innerHTML = `${hours.getHours()}:${hours.getMinutes()}`;
+    time.innerHTML = `${hours.getHours()}:${hours.getMinutes() < 10 ? '0' : ''}${hours.getMinutes()}`;
 }
 setInterval(getTime, 60000);
 getTime();
