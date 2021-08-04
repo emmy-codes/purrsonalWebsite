@@ -141,6 +141,20 @@
   outline-offset: -4px;
 }
 
+.time-and-date {
+  width: 3rem;
+  height: 1.2rem;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  display: block;
+  text-align: center;
+  box-shadow: 2px 2px 1px 0px white, inset 1px 1px 0px 1px #909090;
+  margin-bottom: 0.3rem;
+  margin-right: 0.3rem;
+  padding-top: 0.2rem;
+}
+
 body .hidden {
   display: none;
 }
